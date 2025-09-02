@@ -14,7 +14,7 @@ struct node
     }
 };
 
-// Recursive helper function to perform postorder traversal
+// Recursive helper function to perform inorder traversal
 // Traversal order: Left -> Root -> Right 
 void inOrder(node* root, vector<int>& traversalOrder)
 {
