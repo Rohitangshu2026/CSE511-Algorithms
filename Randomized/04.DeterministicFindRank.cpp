@@ -4,23 +4,23 @@ using namespace std;
 
 int findElementWithRank(vector<int>& nums, int left, int right, int rank) ;
 
-void swap(vector<int>& nums, int i, int j) {
+void swap(vector<int>& nums, int i, int j) 
+{
     int temp = nums[i];
     nums[i] = nums[j];
     nums[j] = temp;
 }
 
-void bubbleSort(vector<int>& nums, int left, int right) {
-    for (int i = 0; i < right - left; ++i) {
-        for (int j = left; j < right - i; ++j) {
-            if (nums[j] > nums[j + 1]) {
+void bubbleSort(vector<int>& nums, int left, int right) 
+{
+    for (int i = 0; i < right - left; ++i) 
+        for (int j = left; j < right - i; ++j) 
+            if (nums[j] > nums[j + 1]) 
                 swap(nums, j, j + 1);
-            }
-        }
-    }
 }
 
-int partition(vector<int>& nums, int left, int right) {
+int partition(vector<int>& nums, int left, int right) 
+{
     int pivotValue = nums[left];
     int i = left + 1;
     int j = right;
